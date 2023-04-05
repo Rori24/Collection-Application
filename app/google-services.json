@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "674499950576",
+    "project_id": "poe-app-f5ad1",
+    "storage_bucket": "poe-app-f5ad1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674499950576:android:51b5dfe2fe126759098f35",
+        "android_client_info": {
+          "package_name": "com.example.poecollectionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674499950576-mgjpqaa0maaelhggudid5lgchaq28ta3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.poecollectionapp",
+            "certificate_hash": "e7524be84198d2bb42ce6d521a4d2e0be7c2f44b"
+          }
+        },
+        {
+          "client_id": "674499950576-s6s9ea7s43pqct2lq6puhf9amn1g6ea5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4MilxvC9Ebt05vxdaq-nSqMAjxh_r8x0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674499950576-s6s9ea7s43pqct2lq6puhf9amn1g6ea5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

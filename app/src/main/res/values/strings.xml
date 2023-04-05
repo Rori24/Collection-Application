@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Poe Collection App</string>
+    <string name="new_user_register">New User? <b>Register!</b></string>
+</resources>

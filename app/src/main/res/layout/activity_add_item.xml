@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddItemActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_back_white"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Add New Item"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="28sp"/>
+
+        <!--Add image-->
+        <ImageButton
+            android:id="@+id/addImageBtn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_add_photo_white"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/itemNameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="225dp">
+
+        <EditText
+            android:id="@+id/itemNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext01"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:drawablePadding="10dp"
+            android:hint="Item Title / Name"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray_01"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/itemDescriptionTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/itemNameTil">
+
+        <EditText
+            android:id="@+id/itemDescriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext01"
+            android:drawableStart="@drawable/ic_description_gray"
+            android:drawablePadding="10dp"
+            android:hint="Item description"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray_01"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--pick category-->
+    <TextView
+        android:id="@+id/categoryTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemDescriptionTil"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_edittext01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="Item Category"
+        android:padding="10dp"
+        android:textColorHint="@color/gray_01"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+
+    <!--Add item button-->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button01"
+        android:text="Submit"
+        android:layout_below="@id/categoryTv"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
